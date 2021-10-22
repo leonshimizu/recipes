@@ -1,0 +1,18 @@
+<br>
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @recipe.title %></h1>
+  <p class="lead">
+    <%= "Ingredients: #{@recipe.ingredients}" %>
+    <br>
+    <%= "Cook Time: #{@recipe.cook_time}" %>
+    <br>
+    <%= "Description: #{@recipe.description}" %>
+    </p>
+  <hr class="my-4">
+  <p class="lead">
+    <%= link_to 'Edit', edit_recipe_path(@recipe), class:"btn btn-secondary" %> 
+    <%= link_to 'Back', recipes_path, class:"btn btn-secondary" %>
+  </p>
+</div>
